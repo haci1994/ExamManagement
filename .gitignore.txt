@@ -1,0 +1,88 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Uncomment if using ASP.NET
+# App_Data/
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored if you're using PackageReference
+packages/
+# Uncomment if using legacy project.json
+# project.lock.json
+# *.deps.json
+
+# Visual Studio Code settings
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.history/
+
+# JetBrains Rider
+.idea/
+
+# Backup & VS crash files
+*.bak
+*.tmp
+*.old
+*.orig
+
+# DotCover
+.idea/.idea.DotSettings
+
+# Rider user-specific files
+*.sln.iml
+
+# Local test results
+TestResults/
+
+# Build logs
+*.log
+
+# Publish outputs
+*.publish/
+
+# User secrets
+secrets.json
+
+# IIS Express
+.vs/
+*.iisexpress/
+
+# dotenv environment variables
+.env
+
+# Optional: ignore database files
+*.mdf
+*.ldf
+*.db
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# StyleCop
+StyleCopReport.xml
