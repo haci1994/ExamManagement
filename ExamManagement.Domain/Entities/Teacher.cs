@@ -7,7 +7,7 @@
         public required string Password { get; set; }
 
         //Navigation
-        public List<Exam> Exams { get; set; } = new();
+        public List<ExamQuestion> ExamQuestions { get; set; } = new();
         public List<Question> Questions { get; set; } = new();
     }
 }
