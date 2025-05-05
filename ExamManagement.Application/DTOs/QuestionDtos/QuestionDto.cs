@@ -30,11 +30,7 @@ namespace ExamManagement.Application.DTOs.QuestionDtos
 		public required int ThemeId { get; set; }
 		public required int Point { get; set; }
 		public required string OptionsJson { get; set; }
-
-		//Navigation
-
-		public List<ExamQuestionDto>? ExamQuestions { get; set; } = new();
-
+		
 	}
 
 	public class QuestionUpdateDto

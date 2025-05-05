@@ -10,13 +10,13 @@ namespace ExamManagement.Application.DTOs.ExamQuestionDtos
 		public int Id { get; set; }
 		public int? ExamId { get; set; }
 		public string? TeacherName { get; set; }
-		public int QuestionTitle { get; set; }
+		public int? QuestionTitle { get; set; }
 
 		//Navigation
 		public ExamDto? Exam { get; set; }
 		public TeacherDto? Teacher { get; set; }
 		public QuestionDto? Question { get; set; }
-		List<StudentAnswerDto> StudentAnswerDto { get; set; } = new();
+		List<StudentAnswerDto>? StudentAnswers { get; set; } = new();
 	}
 
 	public class ExamQuestionCreateDto
