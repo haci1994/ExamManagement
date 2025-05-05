@@ -6,7 +6,7 @@
 		public required int TeacherId { get; set; }
 		public required int ThemeId { get; set; }
 		public required int Point { get; set; }
-		public required string OptionsJson { get; set; }
-		
-	}
+        public List<string> Options { get; set; }
+
+    }
 }

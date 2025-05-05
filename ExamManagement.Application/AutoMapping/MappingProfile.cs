@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿
+using AutoMapper;
 using ExamManagement.Application.DTOs.ExamDtos;
 using ExamManagement.Application.DTOs.ExamQuestionDtos;
 using ExamManagement.Application.DTOs.QuestionDtos;
@@ -15,8 +16,12 @@ namespace ExamManagement.Application.AutoMapping
     {
         MappingProfile()
         {
-            CreateMap<Exam, ExamDto>().ReverseMap();
-            CreateMap<Exam, ExamCreateDto>().ReverseMap();
+            CreateMap<Exam, ExamDto>()
+                .ForMember(x => x.TeacherId, opt => opt.MapFrom(src => src.Teacher.Id))
+                .ReverseMap();
+            CreateMap<Exam, ExamCreateDto>()
+                .ForMember(x => x.TeacherId, opt => opt.MapFrom(src=> src.Teacher.Id))
+                .ReverseMap();
             CreateMap<Exam, ExamUpdateDto>().ReverseMap();
 
             CreateMap<ExamQuestion, ExamQuestionDto>()

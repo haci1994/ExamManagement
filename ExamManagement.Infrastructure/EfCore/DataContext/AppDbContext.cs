@@ -16,7 +16,7 @@ namespace ExamManagement.Infrastructure.EfCore.DataContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=RUBIS09\\SQLEXPRESS;Database=ExamManagement;Trusted_Connection=true;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=ExamManagement;Trusted_Connection=true;TrustServerCertificate=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
