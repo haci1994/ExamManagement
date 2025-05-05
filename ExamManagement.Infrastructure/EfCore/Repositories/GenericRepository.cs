@@ -9,7 +9,7 @@ namespace ExamManagement.Infrastructure.EfCore.Repositories
 {
     public class GenericRepository<TEntity> : IGenericInterface<TEntity> where TEntity : BaseEntity
     {
-        private readonly AppDbContext _context;
+        protected readonly AppDbContext _context;
 
         public GenericRepository()
         {
