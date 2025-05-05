@@ -40,8 +40,12 @@
             btnExit = new Button();
             pnlGroup = new Panel();
             chkPassword = new CheckBox();
+            panel1 = new Panel();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlGroup.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btnSignInIn
@@ -65,7 +69,7 @@
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 10F);
             lblName.ForeColor = SystemColors.GrayText;
-            lblName.Location = new Point(47, 236);
+            lblName.Location = new Point(47, 315);
             lblName.Name = "lblName";
             lblName.Size = new Size(105, 23);
             lblName.TabIndex = 1;
@@ -75,7 +79,7 @@
             // 
             txtUserName.Font = new Font("SimSun", 13F, FontStyle.Bold);
             txtUserName.ForeColor = SystemColors.GrayText;
-            txtUserName.Location = new Point(47, 262);
+            txtUserName.Location = new Point(47, 341);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(378, 32);
             txtUserName.TabIndex = 1;
@@ -85,7 +89,7 @@
             // 
             txtPassword.Font = new Font("SimSun", 13F, FontStyle.Bold);
             txtPassword.ForeColor = SystemColors.GrayText;
-            txtPassword.Location = new Point(47, 330);
+            txtPassword.Location = new Point(47, 409);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(378, 32);
@@ -97,7 +101,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F);
             label2.ForeColor = SystemColors.GrayText;
-            label2.Location = new Point(47, 304);
+            label2.Location = new Point(47, 383);
             label2.Name = "label2";
             label2.Size = new Size(43, 23);
             label2.TabIndex = 3;
@@ -170,7 +174,7 @@
             pnlGroup.Controls.Add(btnSignInIn);
             pnlGroup.Controls.Add(btnExit);
             pnlGroup.Controls.Add(btnNewUser);
-            pnlGroup.Location = new Point(28, 411);
+            pnlGroup.Location = new Point(28, 490);
             pnlGroup.Name = "pnlGroup";
             pnlGroup.Size = new Size(418, 109);
             pnlGroup.TabIndex = 10;
@@ -181,7 +185,7 @@
             chkPassword.CheckAlign = ContentAlignment.MiddleRight;
             chkPassword.Cursor = Cursors.Hand;
             chkPassword.ForeColor = SystemColors.GrayText;
-            chkPassword.Location = new Point(293, 375);
+            chkPassword.Location = new Point(293, 454);
             chkPassword.Name = "chkPassword";
             chkPassword.Size = new Size(119, 24);
             chkPassword.TabIndex = 13;
@@ -189,12 +193,45 @@
             chkPassword.UseVisualStyleBackColor = true;
             chkPassword.CheckedChanged += chkPassword_CheckedChanged;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(radioButton2);
+            panel1.Controls.Add(radioButton1);
+            panel1.Location = new Point(54, 251);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(365, 40);
+            panel1.TabIndex = 14;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Checked = true;
+            radioButton1.Location = new Point(74, 8);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(75, 24);
+            radioButton1.TabIndex = 0;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Tələbə";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(207, 8);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(84, 24);
+            radioButton2.TabIndex = 1;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Müəllim";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(472, 542);
+            ClientSize = new Size(472, 622);
+            Controls.Add(panel1);
             Controls.Add(chkPassword);
             Controls.Add(pnlGroup);
             Controls.Add(pictureBox1);
@@ -210,6 +247,8 @@
             Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnlGroup.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -227,5 +266,8 @@
         private Button btnExit;
         private Panel pnlGroup;
         private CheckBox chkPassword;
+        private Panel panel1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
     }
 }

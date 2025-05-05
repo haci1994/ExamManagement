@@ -66,11 +66,11 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI Light", 17F);
             lblTitle.ForeColor = SystemColors.GrayText;
-            lblTitle.Location = new Point(115, 188);
+            lblTitle.Location = new Point(70, 188);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(243, 40);
+            lblTitle.Size = new Size(333, 40);
             lblTitle.TabIndex = 19;
-            lblTitle.Text = "Yeni hesab yaradın";
+            lblTitle.Text = "Yeni tələbə hesabı yaradın";
             // 
             // txtPassword
             // 
