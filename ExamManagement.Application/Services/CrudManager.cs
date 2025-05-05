@@ -10,8 +10,8 @@ namespace ExamManagement.Application.Services
 {
     public class CrudManager<TEntity, TDto, TCreateDto, TUpdateDto> : ICrudManager<TEntity, TDto, TCreateDto, TUpdateDto> where TEntity : BaseEntity
     {
-        private readonly IGenericInterface<TEntity> _databaseCrud;
-        private readonly IMapper _mapper;
+        protected readonly IGenericInterface<TEntity> _databaseCrud;
+        protected readonly IMapper _mapper;
         public CrudManager()
         {
             _databaseCrud = new GenericRepository<TEntity>();
