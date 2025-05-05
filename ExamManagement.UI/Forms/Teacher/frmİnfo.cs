@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace ExamManagement.UI.Forms.Teacher
 {
-    public partial class frmTeacherMain : Form
+    public partial class frmİnfo : Form
     {
-        public frmTeacherMain()
+        public frmİnfo()
         {
             InitializeComponent();
-        }
-
-        private void frmTeacherMain_Load(object sender, EventArgs e)
-        {
         }
     }
 }
