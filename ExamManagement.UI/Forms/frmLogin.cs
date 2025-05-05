@@ -21,10 +21,9 @@ namespace ExamManagement.UI.Forms
 
         private void btnNewUser_Click(object sender, EventArgs e)
         {
-            
             Forms.frmNewAccount frm = new Forms.frmNewAccount();
-            frm.ShowDialog();
-            this.Close();
+            frm.Show();
+            this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -44,5 +43,10 @@ namespace ExamManagement.UI.Forms
             }
         }
 
+        private void btnSignInIn_Click(object sender, EventArgs e)
+        {
+            Teacher.frmTeacherMain frm = new Teacher.frmTeacherMain();
+            frm.Show();
+        }
     }
 }

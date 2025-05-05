@@ -17,11 +17,27 @@ namespace ExamManagement.UI.Forms
             InitializeComponent();
         }
 
-        private void btnNewUser_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            
-            Forms.frmLogin frmLogin = new Forms.frmLogin();
-            frmLogin.ShowDialog();
+            Forms.frmLogin frm = new Forms.frmLogin();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void chkPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkPassword.Checked)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
