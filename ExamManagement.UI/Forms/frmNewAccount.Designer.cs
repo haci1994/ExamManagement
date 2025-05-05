@@ -35,7 +35,7 @@
             label2 = new Label();
             txtName = new TextBox();
             lblName = new Label();
-            btnNewUser = new Button();
+            btnBack = new Button();
             pictureBox1 = new PictureBox();
             btnExit = new Button();
             chkPassword = new CheckBox();
@@ -54,12 +54,11 @@
             btnSignInUp.FlatStyle = FlatStyle.Flat;
             btnSignInUp.Font = new Font("Segoe UI", 12F);
             btnSignInUp.ForeColor = Color.White;
-            btnSignInUp.Location = new Point(17, 6);
-            btnSignInUp.Margin = new Padding(3, 2, 3, 2);
+            btnSignInUp.Location = new Point(19, 8);
             btnSignInUp.Name = "btnSignInUp";
-            btnSignInUp.Size = new Size(331, 35);
+            btnSignInUp.Size = new Size(378, 47);
             btnSignInUp.TabIndex = 4;
-            btnSignInUp.Text = "Sign In";
+            btnSignInUp.Text = "Qeydiyyatdan keç";
             btnSignInUp.UseVisualStyleBackColor = false;
             // 
             // lblTitle
@@ -67,21 +66,20 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI Light", 17F);
             lblTitle.ForeColor = SystemColors.GrayText;
-            lblTitle.Location = new Point(78, 137);
+            lblTitle.Location = new Point(70, 188);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(222, 31);
+            lblTitle.Size = new Size(333, 40);
             lblTitle.TabIndex = 19;
-            lblTitle.Text = "Create a new account";
+            lblTitle.Text = "Yeni tələbə hesabı yaradın";
             // 
             // txtPassword
             // 
             txtPassword.Font = new Font("SimSun", 13F, FontStyle.Bold);
             txtPassword.ForeColor = SystemColors.GrayText;
-            txtPassword.Location = new Point(40, 247);
-            txtPassword.Margin = new Padding(3, 2, 3, 2);
+            txtPassword.Location = new Point(46, 334);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(331, 27);
+            txtPassword.Size = new Size(378, 32);
             txtPassword.TabIndex = 16;
             txtPassword.TextAlign = HorizontalAlignment.Center;
             // 
@@ -90,20 +88,19 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F);
             label2.ForeColor = SystemColors.GrayText;
-            label2.Location = new Point(40, 227);
+            label2.Location = new Point(46, 308);
             label2.Name = "label2";
-            label2.Size = new Size(67, 19);
+            label2.Size = new Size(43, 23);
             label2.TabIndex = 17;
-            label2.Text = "Password";
+            label2.Text = "Şifrə";
             // 
             // txtName
             // 
             txtName.Font = new Font("SimSun", 13F, FontStyle.Bold);
             txtName.ForeColor = SystemColors.GrayText;
-            txtName.Location = new Point(40, 195);
-            txtName.Margin = new Padding(3, 2, 3, 2);
+            txtName.Location = new Point(46, 266);
             txtName.Name = "txtName";
-            txtName.Size = new Size(331, 27);
+            txtName.Size = new Size(378, 32);
             txtName.TabIndex = 14;
             txtName.TextAlign = HorizontalAlignment.Center;
             // 
@@ -112,42 +109,39 @@
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 10F);
             lblName.ForeColor = SystemColors.GrayText;
-            lblName.Location = new Point(40, 176);
+            lblName.Location = new Point(46, 240);
             lblName.Name = "lblName";
-            lblName.Size = new Size(45, 19);
+            lblName.Size = new Size(31, 23);
             lblName.TabIndex = 15;
-            lblName.Text = "Name";
+            lblName.Text = "Ad";
             // 
-            // btnNewUser
+            // btnBack
             // 
-            btnNewUser.BackColor = Color.White;
-            btnNewUser.Cursor = Cursors.Hand;
-            btnNewUser.DialogResult = DialogResult.OK;
-            btnNewUser.FlatAppearance.BorderColor = Color.White;
-            btnNewUser.FlatAppearance.BorderSize = 0;
-            btnNewUser.FlatAppearance.CheckedBackColor = Color.White;
-            btnNewUser.FlatAppearance.MouseDownBackColor = Color.White;
-            btnNewUser.FlatAppearance.MouseOverBackColor = Color.White;
-            btnNewUser.FlatStyle = FlatStyle.Flat;
-            btnNewUser.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnNewUser.ForeColor = Color.FromArgb(15, 157, 88);
-            btnNewUser.Location = new Point(190, 46);
-            btnNewUser.Margin = new Padding(3, 2, 3, 2);
-            btnNewUser.Name = "btnNewUser";
-            btnNewUser.Size = new Size(158, 35);
-            btnNewUser.TabIndex = 6;
-            btnNewUser.Text = "Back";
-            btnNewUser.TextAlign = ContentAlignment.MiddleRight;
-            btnNewUser.UseVisualStyleBackColor = false;
-            btnNewUser.Click += btnNewUser_Click;
+            btnBack.BackColor = Color.White;
+            btnBack.Cursor = Cursors.Hand;
+            btnBack.DialogResult = DialogResult.OK;
+            btnBack.FlatAppearance.BorderColor = Color.White;
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.FlatAppearance.MouseDownBackColor = Color.White;
+            btnBack.FlatAppearance.MouseOverBackColor = Color.White;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnBack.ForeColor = Color.FromArgb(15, 157, 88);
+            btnBack.Location = new Point(217, 61);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(180, 47);
+            btnBack.TabIndex = 6;
+            btnBack.Text = "Geri";
+            btnBack.TextAlign = ContentAlignment.MiddleRight;
+            btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(23, 15);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(27, 26);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(366, 112);
+            pictureBox1.Size = new Size(418, 149);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
@@ -158,20 +152,19 @@
             btnExit.Cursor = Cursors.Hand;
             btnExit.FlatAppearance.BorderColor = Color.White;
             btnExit.FlatAppearance.BorderSize = 0;
-            btnExit.FlatAppearance.CheckedBackColor = Color.White;
             btnExit.FlatAppearance.MouseDownBackColor = Color.White;
             btnExit.FlatAppearance.MouseOverBackColor = Color.White;
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btnExit.ForeColor = Color.FromArgb(15, 157, 88);
-            btnExit.Location = new Point(17, 46);
-            btnExit.Margin = new Padding(3, 2, 3, 2);
+            btnExit.Location = new Point(19, 61);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(76, 35);
+            btnExit.Size = new Size(87, 47);
             btnExit.TabIndex = 9;
-            btnExit.Text = "Exit";
+            btnExit.Text = "Çıxış";
             btnExit.TextAlign = ContentAlignment.MiddleLeft;
             btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
             // chkPassword
             // 
@@ -179,22 +172,21 @@
             chkPassword.CheckAlign = ContentAlignment.MiddleRight;
             chkPassword.Cursor = Cursors.Hand;
             chkPassword.ForeColor = SystemColors.GrayText;
-            chkPassword.Location = new Point(255, 280);
-            chkPassword.Margin = new Padding(3, 2, 3, 2);
+            chkPassword.Location = new Point(292, 379);
             chkPassword.Name = "chkPassword";
-            chkPassword.Size = new Size(108, 19);
+            chkPassword.Size = new Size(119, 24);
             chkPassword.TabIndex = 23;
-            chkPassword.Text = "Show Password";
+            chkPassword.Text = "Şifrəni göstər";
             chkPassword.UseVisualStyleBackColor = true;
+            chkPassword.CheckedChanged += chkPassword_CheckedChanged;
             // 
             // txtUserName
             // 
             txtUserName.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             txtUserName.ForeColor = SystemColors.GrayText;
-            txtUserName.Location = new Point(40, 301);
-            txtUserName.Margin = new Padding(3, 2, 3, 2);
+            txtUserName.Location = new Point(46, 406);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(331, 31);
+            txtUserName.Size = new Size(378, 36);
             txtUserName.TabIndex = 18;
             txtUserName.TextAlign = HorizontalAlignment.Center;
             // 
@@ -203,28 +195,28 @@
             lblUserName.AutoSize = true;
             lblUserName.Font = new Font("Segoe UI", 10F);
             lblUserName.ForeColor = SystemColors.GrayText;
-            lblUserName.Location = new Point(40, 281);
+            lblUserName.Location = new Point(46, 380);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(71, 19);
+            lblUserName.Size = new Size(105, 23);
             lblUserName.TabIndex = 22;
-            lblUserName.Text = "Username";
+            lblUserName.Text = "İstifadəçi adı";
             // 
             // pnlGroup
             // 
             pnlGroup.Controls.Add(btnSignInUp);
             pnlGroup.Controls.Add(btnExit);
-            pnlGroup.Controls.Add(btnNewUser);
-            pnlGroup.Location = new Point(23, 347);
-            pnlGroup.Margin = new Padding(3, 2, 3, 2);
+            pnlGroup.Controls.Add(btnBack);
+            pnlGroup.Location = new Point(27, 457);
             pnlGroup.Name = "pnlGroup";
-            pnlGroup.Size = new Size(366, 82);
+            pnlGroup.Size = new Size(418, 109);
             pnlGroup.TabIndex = 21;
             // 
             // frmNewAccount
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(413, 446);
+            BackColor = Color.White;
+            ClientSize = new Size(472, 582);
             Controls.Add(lblTitle);
             Controls.Add(txtPassword);
             Controls.Add(label2);
@@ -238,7 +230,6 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmNewAccount";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "New Account";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnlGroup.ResumeLayout(false);
             ResumeLayout(false);
@@ -253,7 +244,7 @@
         private Label label2;
         private TextBox txtName;
         private Label lblName;
-        private Button btnNewUser;
+        private Button btnBack;
         private PictureBox pictureBox1;
         private Button btnExit;
         private CheckBox chkPassword;
