@@ -9,5 +9,6 @@
         //Navigation
         public List<ExamQuestion> ExamQuestions { get; set; } = new();
         public List<Question> Questions { get; set; } = new();
+        public List<Exam> Exams { get; set; } = new();
     }
 }

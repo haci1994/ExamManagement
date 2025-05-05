@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamManagement.Domain", "Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamManagement.Infrastructure", "ExamManagement.Infrastructure\ExamManagement.Infrastructure.csproj", "{CCDCC907-6251-4EA5-8E1E-C00BE535CC9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamManagement.Application", "ExamManagement.Application\ExamManagement.Application.csproj", "{413B6730-56FC-4775-82A5-93076151A0F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CCDCC907-6251-4EA5-8E1E-C00BE535CC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCDCC907-6251-4EA5-8E1E-C00BE535CC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCDCC907-6251-4EA5-8E1E-C00BE535CC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413B6730-56FC-4775-82A5-93076151A0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413B6730-56FC-4775-82A5-93076151A0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413B6730-56FC-4775-82A5-93076151A0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413B6730-56FC-4775-82A5-93076151A0F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
