@@ -6,17 +6,7 @@ namespace ExamManagement.Application.DTOs.ExamDtos
     public class ExamDto
     {
         public int Id { get; set; }
-		public List<StudentExamDto> StudentExams { get; set; } = new();
-		public List<ExamQuestionDto> ExamQuestions { get; set; } = new();
-	}
-
-	public class ExamCreateDto
-	{
-		
-	}
-
-	public class ExamUpdateDto
-	{
-
-	}
+        public List<StudentExamDto> StudentExams { get; set; } = new();
+        public List<ExamQuestionDto> ExamQuestions { get; set; } = new();
+    }
 }

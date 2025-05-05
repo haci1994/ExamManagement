@@ -14,19 +14,4 @@ namespace ExamManagement.Application.DTOs.TeacherDtos
 		public List<ExamQuestionDto> ExamQuestions { get; set; } = new();
 		public List<QuestionDto> Questions { get; set; } = new();
 	}
-
-	public class TeacherCreateDto
-	{
-		public required string Name { get; set; }
-		public required string UserName { get; set; }
-		public required string Password { get; set; }
-	}
-
-	public class TeacherUpdateDto
-	{
-		public int Id { get; set; }
-		public required string Name { get; set; }
-		public required string UserName { get; set; }
-		public required string Password { get; set; }
-	}
 }

@@ -13,39 +13,55 @@ namespace ExamManagement.Application.Services
         private readonly IGenericInterface<TEntity> _databaseCrud;
         private readonly IMapper _mapper;
         public CrudManager()
-            {
-                _databaseCrud = new GenericRepository<TEntity>();
-            }
+        {
+            _databaseCrud = new GenericRepository<TEntity>();
+        }
 
 
         public TDto Add(TCreateDto createDto)
         {
-            
+            var entity = _mapper.Map<TEntity>(createDto);
+            _databaseCrud.Add(entity);
+
+            return _mapper.Map<TDto>(entity);
         }
 
         public TDto Delete(int Id)
         {
-            throw new NotImplementedException();
+            var entity = _databaseCrud.GetById(Id);
+            _databaseCrud.Delete(entity);
+
+            return _mapper.Map<TDto>(entity);
         }
 
         public TDto Get(Expression<Func<TEntity, bool>> predicate, bool asNoTracking = false, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null)
         {
-            throw new NotImplementedException();
+            var entity = _databaseCrud.Get(predicate, asNoTracking, include);
+
+            return _mapper.Map<TDto>(entity);
         }
 
         public List<TDto> GetAll(Expression<Func<TEntity, bool>> predicate, bool asNoTracking = false, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>>? orderBy = null)
         {
-            throw new NotImplementedException();
+            var entities = _databaseCrud.GetAll(predicate, asNoTracking, include);
+
+            return _mapper.Map<List<TDto>>(entities);
         }
 
         public TDto GetById(int id)
         {
-            throw new NotImplementedException();
+            var entity = _databaseCrud.GetById(id);
+
+            return _mapper.Map<TDto>(entity);
         }
 
         public TDto Update(TUpdateDto updateDto)
         {
-            throw new NotImplementedException();
+            var entity = _mapper.Map<TEntity>(updateDto);
+            var updatedEntity = _databaseCrud.GetById(entity.Id);
+            updatedEntity = entity;
+
+            return _mapper.Map<TDto>(updatedEntity);
         }
     }
 }

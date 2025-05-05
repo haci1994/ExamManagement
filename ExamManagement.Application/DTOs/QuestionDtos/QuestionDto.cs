@@ -22,25 +22,4 @@ namespace ExamManagement.Application.DTOs.QuestionDtos
 
 		public List<string>? Options { get; set; } = new();
 	}
-
-	public class QuestionCreateDto
-	{
-		public required string Title { get; set; }
-		public required int TeacherId { get; set; }
-		public required int ThemeId { get; set; }
-		public required int Point { get; set; }
-		public required string OptionsJson { get; set; }
-		
-	}
-
-	public class QuestionUpdateDto
-	{
-		public int Id { get; set; }
-		public required string Title { get; set; }
-		public required int TeacherId { get; set; }
-		public required int ThemeId { get; set; }
-		public required int Point { get; set; }
-		public required string OptionsJson { get; set; }
-
-	}
 }
