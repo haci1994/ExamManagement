@@ -3,6 +3,7 @@ using ExamManagement.Application.Interfaces;
 using ExamManagement.Application.Services;
 using ExamManagement.Domain.Entities;
 using ExamManagement.Domain.Interfaces;
+using ExamManagement.Infrastructure.EfCore.Repositories;
 
 namespace ExamManagement.Application.Services
 {
@@ -10,9 +11,9 @@ namespace ExamManagement.Application.Services
     {
         public int Login(string username, string password)
         {
-            var loginService = new TeacherService();
+            var loginService = new TeacherRepository();
 
-            int loggedInUser = loginService.Login(username, password);
+            int loggedInUser = loginService.GetUser(username, password);
             return loggedInUser;
         }
     }
