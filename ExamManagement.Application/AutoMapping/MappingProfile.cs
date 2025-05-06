@@ -14,7 +14,7 @@ namespace ExamManagement.Application.AutoMapping
 {
     public class MappingProfile : Profile
     {
-        MappingProfile()
+        public MappingProfile()
         {
             CreateMap<Exam, ExamDto>()
                 .ForMember(x => x.TeacherId, opt => opt.MapFrom(src => src.Teacher.Id))

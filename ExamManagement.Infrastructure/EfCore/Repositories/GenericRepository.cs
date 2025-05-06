@@ -20,6 +20,8 @@ namespace ExamManagement.Infrastructure.EfCore.Repositories
         {
             var added = _context.Set<TEntity>().Add(entity);
 
+            _context.SaveChanges();
+
             return added.Entity;
         }
 
