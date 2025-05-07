@@ -29,6 +29,8 @@ namespace ExamManagement.Infrastructure.EfCore.Repositories
         {
             var deleted = _context.Set<TEntity>().Remove(entity);
 
+            _context.SaveChanges();
+
             return deleted.Entity;
         }
 
@@ -83,6 +85,8 @@ namespace ExamManagement.Infrastructure.EfCore.Repositories
         public TEntity Update(TEntity entity)
         {
             var updated = _context.Set<TEntity>().Update(entity);
+
+            _context.SaveChanges();
 
             return updated.Entity;
         }
